@@ -16,19 +16,8 @@ theme:
         - search.share
         - search.suggest
         - toc.follow
-extra_css:
-    - stylesheets/extra.css
-markdown_extensions:
-    - md_in_html
-    - attr_list
-    - pymdownx.emoji:
-          emoji_generator: !!python/name:materialx.emoji.to_svg
-          emoji_index: !!python/name:materialx.emoji.twemoji
 plugins:
     - search
-    - mkdocstrings:
-          watch:
-              - overrides
 dev_addr: 127.0.0.1:6969
 repo_url: https://github.com/fga-eps-mds/2025.1-EasyCrit-docs
 nav:
