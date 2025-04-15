@@ -1,24 +1,6 @@
 site_name: EasyCrit Wiki
-theme:
-    icon:
-        repo: fontawesome/brands/github-square
-    name: material
-    logo: assets/imagens/logo.svg
-    favicon: assets/imagens/logo.svg
-    features:
-        - content.code.annotate
-        - navigation.indexes
-        - navigation.sections
-        - navigation.tabs
-        - navigation.top
-        - navigation.tracking
-        - search.highlight
-        - search.share
-        - search.suggest
-        - toc.follow
-plugins:
-    - search
-dev_addr: 127.0.0.1:6969
 repo_url: https://github.com/fga-eps-mds/2025.1-EasyCrit-docs
 nav:
     - Home: index.md
+theme:
+  name: material
