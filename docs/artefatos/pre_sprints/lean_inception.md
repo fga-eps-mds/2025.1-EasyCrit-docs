@@ -12,3 +12,8 @@ Na etapa de Lean Inception feita pelo grupo responsável de EPS e MDS do projeto
 ## Primeira etapa
 ### Visão do produto
 **Para** jogar um RPG de mesa, **Cujo problema majoritário é** o controle do ambiente e dos jogadores do RPG, **O EasyCrit é** um ambiente virtual para jogar RPG em plataforma web, **que oferece** facilidade de acesso, maior gerenciamento e controle do jogo, **Diferentemente da** _Roll 20_, procura proporcionar facilidade de uso (UX). **O nosso produto busca** sincronizar e proporcionar melhor contole e apoio aos jogadores e mestres de RPG virtual.
+
+### É - Não é - Faz - Não faz
+
+### Personas
+
