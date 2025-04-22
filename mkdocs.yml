@@ -1,6 +1,13 @@
 site_name: EasyCrit Wiki
 repo_url: https://github.com/fga-eps-mds/2025.1-EasyCrit-docs
-nav:
-    - Home: index.md
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+nav:
+    - Home: index.md
+    - Artefatos pré sprints:
+      - Lean Inception: artefatos/pre_sprints/lean_inception.md
+
+
