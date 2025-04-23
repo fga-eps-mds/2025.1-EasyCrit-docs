@@ -4,7 +4,7 @@ Olá! Ficamos muito felizes com seu interesse em contribuir com o **EasyCrit**. 
 
 ## Como posso contribuir para o EasyCrit?
 
-* Leia nosso [**Código de Conduta**](./CODE_OF_CONDUCT.md)
+* Leia nosso [**Código de Conduta**](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/blob/main/.github/CODE_OF_CONDUCT.md)
 * Crie sua [**Issue**](#crie-sua-issue)
 * Siga nossa [**Política de Branches**](#politica-de-branches)
 * Faça seus [**Política de Commits**](#politica-de-commits)
@@ -14,7 +14,7 @@ Olá! Ficamos muito felizes com seu interesse em contribuir com o **EasyCrit**. 
 
 ## Crie sua Issue
 
-- Utilize nosso [template padrão]() para criar issues.
+- Utilize nosso [template padrão](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/blob/main/.github/ISSUE_TEMPLATE.md) para criar issues.
 - Verifique primeiro nas [issues existentes](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/issues) se sua sugestão já foi registrada.
 - Caso não exista, crie uma [nova issue](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/issues/new) com uma **label adequada**.
 
@@ -27,7 +27,7 @@ Olá! Ficamos muito felizes com seu interesse em contribuir com o **EasyCrit**. 
    - Crie uma nova issue com:
      - Uma descrição clara da mudança proposta.
      - Um título autoexplicativo.
-3. Submeta suas alterações via [Pull Request](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/pulls), seguindo nosso [template]().
+3. Submeta suas alterações via [Pull Request](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/pulls), seguindo nosso [template](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/blob/main/.github/PULL_REQUEST_TEMPLATE.md).
 
 ---
 
