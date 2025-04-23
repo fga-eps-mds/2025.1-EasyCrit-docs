@@ -6,8 +6,8 @@ Olá! Ficamos muito felizes com seu interesse em contribuir com o **EasyCrit**. 
 
 * Leia nosso [**Código de Conduta**](./CODE_OF_CONDUCT.md)
 * Crie sua [**Issue**](#crie-sua-issue)
-* Siga nossa [**Política de Branches**](#política-de-branches)
-* Faça seus [**Commits**](#política-de-commits)
+* Siga nossa [**Política de Branches**](#politica-de-branches)
+* Faça seus [**Política de Commits**](#politica-de-commits)
 * Envie um [**Pull Request**](#crie-um-pull-request)
 
 ---
