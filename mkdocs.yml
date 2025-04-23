@@ -7,7 +7,8 @@ theme:
     - navigation.top
 nav:
     - Home: index.md
+    - Guia:
+      - Guia de Contribuição: artefatos/guias/contributing.md
     - Artefatos pré sprints:
       - Lean Inception: artefatos/pre_sprints/lean_inception.md
-
 
