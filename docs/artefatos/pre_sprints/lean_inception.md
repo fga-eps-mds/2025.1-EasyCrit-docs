@@ -15,6 +15,15 @@ O Lean Inception é dividido em algumas atividades, feitas em conjunto pela equi
 | 23/04/2025 | 0.2 | Adiciona Tópico de É, Não É, Faz, Não Faz | Philipe de Sousa Barros |
 | 28/04/2025 | 0.3 | Adiciona segunda etapa do Lean Inception | Matheus Pimentel Leal |
 
+## Siglas
+| Sigla | Descrição |
+|-------|-----------|
+| MVP   | _Minimum Viable Product_ |
+| EPS   | Engenharia do Produto de Software |
+| MDS   | Métodos de Desenvolvimento de Software |
+| UX    | _User Experience_ |
+| RPG   | _Role Playing Game_ |
+
 Na etapa de Lean Inception feita pelo grupo responsável de EPS e MDS do projeto EasyCrit, foi decidido pela realização em 4 etapas: Na primeira etapa ficou definido que o grupo definiria a visão do produto, a matriz "É - Não é - Faz - Não faz", a criação das personas e o começo do brainstorming de funcionalidades. Já na segunda etapa, as personas criadas passaram por um refinamento posterior, além da finalização da etapa de brainstorming de funcionalidades. A terceira etapa teve a responsabilidade de realizar a revisão e refinamento técnico de Experiência de usuário (UX) e negócio. E por fim, na quarta etapa foram montadas as jornadas de usuário além da conexão das funcionalidades com as jornadas e a construção do sequenciador e do Canvas MVP.
 
 ## Primeira etapa
