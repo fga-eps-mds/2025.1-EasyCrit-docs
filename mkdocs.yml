@@ -5,6 +5,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+markdown_extensions:
+  - attr_list
 nav:
     - Home: index.md
     - Guia:
