@@ -13,12 +13,13 @@ markdown_extensions:
   - attr_list
 nav:
     - Home: index.md
-    - Contribuição:
-      - Como Contribuir: artefatos/contribuicao/contributing.md
-      - Código de conduta: artefatos/contribuicao/code-of-conduct.md
-      - Template de commits: artefatos/contribuicao/template-commits.md
-      - Como abrir uma issue: artefatos/contribuicao/how-to-issue.md
-      - Template de documentação de sptint: artefatos/contribuicao/template-sprints.md
-    - Artefatos pré sprints:
+    - Guias:
+      - Como Contribuir: artefatos/guias/contributing.md
+      - Código de conduta: artefatos/guias/code-of-conduct.md
+      - Guia de identidade visual: artefatos/guias/visual-identity.md
+      - Template de commits: artefatos/guias/template-commits.md
+      - Como abrir uma issue: artefatos/guias/how-to-issue.md
+      - Template de documentação de sptint: artefatos/guias/template-sprints.md
+    - Pré projeto:
       - Lean Inception: artefatos/pre_sprints/lean_inception.md
       - Quadro de Conhecimentos: artefatos/pre_sprints/quadro_de_conhecimentos.md
