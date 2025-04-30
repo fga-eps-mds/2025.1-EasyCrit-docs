@@ -1,14 +1,23 @@
-# Guia de Contribuição para o EasyCrit
+# Diretrizes de contribuição
+Este é o repositório principal centralizador do projeto ```EasyCrit```.
 
-Olá! Ficamos muito felizes com seu interesse em contribuir com o **EasyCrit**. Antes de começar, por favor, leia atentamente as orientações abaixo.
+Caso você esteja interessado em resolver um bug, ou adicionar uma nova feature, este repositório irá te guiar para a forma correta de contribuição.
 
-## Como posso contribuir para o EasyCrit?
+O sistema de RPG virtual ```EasyCrit``` possui uma arquitetura de microsserviços, dividia em 4 repositórios de projeto. O repositório [EasyCrit-frontend](https://github.com/fga-eps-mds/2025.1-EasyCrit-frontend) contém todo o projeto de desenvolvimento _front-end_ do projeto, já o _back-end_ está separado em 3 outros repositórios, sendo eles: [EasyCrit-auth](https://github.com/fga-eps-mds/2025.1-EasyCrit-auth), [EasyCrit-sessionManager](https://github.com/fga-eps-mds/2025.1-EasyCrit-sessionManager) e [EasyCrit-fileManager](https://github.com/fga-eps-mds/2025.1-EasyCrit-fileManager). Cada um dos projetos de _back-end_ possui seu próprio repositório e pode receber contribuições individuais. As _issues_ devem ser mantidas **apenas** no repositório de documentação, para que seja centralizado a organização e visualização das tarefas de desenvolvimento do projeto. 
+
+Para rodar o projeto basta executar os comandos listados abaixo, considerando que as ferramentas de desenvolvimento necessárias listadas [aqui]() estejam devidamente instaladas em seu sistema.
+
+```shell
+docker compose up
+```
+
+## Informações importantes antes de contribuir com o EasyCrit
 
 * Leia nosso [**Código de Conduta**](https://github.com/fga-eps-mds/2025.1-EasyCrit-docs/blob/main/.github/CODE_OF_CONDUCT.md)
-* Crie sua [**Issue**](#crie-sua-issue)
+* veja o [**Template de Issue**](#crie-sua-issue)
 * Siga nossa [**Política de Branches**](#politica-de-branches)
-* Faça seus [**Política de Commits**](#politica-de-commits)
-* Envie um [**Pull Request**](#crie-um-pull-request)
+* Siga a [**Política de Commits**](#politica-de-commits)
+* veja o [**Template de Pull Request**](#crie-um-pull-request)
 
 ---
 
@@ -39,7 +48,7 @@ Olá! Ficamos muito felizes com seu interesse em contribuir com o **EasyCrit**. 
 - Devem ser **claras e objetivas**.
 - Devem referenciar a **issue relacionada**:
 
-```bash
+```shell
 git commit -m '#X mensagem do commit'
 ```
 *Onde X é o número da issue*
@@ -71,15 +80,15 @@ Branches de trabalho:
 - **`devel`**  
   Branch principal de **integração de funcionalidades** antes de irem para a release.
 
-- **`hotfix/numero-issue-descricao`**  
+- **`hotfix/#issue-descricao-aqui`**  
   Usada para **corrigir bugs em produção rapidamente**.  
-  Exemplo: `hotfix/1-correcao-login`
+  Exemplo: `hotfix/#1-correcao-login`
 
-- **`feature/numero-issue-descricao`**  
+- **`feature/#issue-descricao-aqui`**  
   Para desenvolver **novas funcionalidades**.  
-  Exemplo: `feature/2-cadastro-usuarios`
+  Exemplo: `feature/#2-cadastro-usuarios`
 
-- **`release/versao`**  
+- **`release/tag-versao`**  
   Usada para **preparar uma nova versão** do projeto.  
   Exemplo: `release/v1.2.0`
 

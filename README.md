@@ -11,12 +11,12 @@
 <img src="https://img.shields.io/badge/mkdocs-lightblue?style=for-the-badge&logo=mkdocs&logoColor=%23FFFFFF"/>
 </div>
 
-### 📍 Para testar a página de wiki localmente
-#### Pré-requisitos
+## 📍 Para testar a página de wiki localmente
+### Pré-requisitos
 - Docker
 - Docker Compose
 
-#### Executando
+### Executando
  Apos clonar o repositório, execute o seguinte comando na raiz do projeto:
 ```bash
 docker-compose up -d
