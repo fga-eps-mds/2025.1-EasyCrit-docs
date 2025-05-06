@@ -2,6 +2,7 @@ site_name: EasyCrit Wiki
 repo_url: https://github.com/fga-eps-mds/2025.1-EasyCrit-docs
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo-easycrit-rounded.png
   favicon: assets/logo-easycrit-rounded.png
   features:
@@ -19,7 +20,7 @@ nav:
       - Guia de identidade visual: artefatos/guias/visual-identity.md
       - Template de commits: artefatos/guias/template-commits.md
       - Como abrir uma issue: artefatos/guias/how-to-issue.md
-      - Template de documentação de sptint: artefatos/guias/template-sprints.md
+      - Template de documentação de sprint: artefatos/guias/template-sprints.md
     - Pré projeto:
       - Lean Inception: artefatos/pre_sprints/lean_inception.md
       - Quadro de Conhecimentos: artefatos/pre_sprints/quadro_de_conhecimentos.md

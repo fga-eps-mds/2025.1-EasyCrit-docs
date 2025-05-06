@@ -1,4 +1,4 @@
-# EasyCrit
-Plataforma de RPG de mesa online
-
-
+---
+title: EasyCrit Wiki
+template: home.html
+---

@@ -1,0 +1,74 @@
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+    :root {
+      --black-blue: #071013;
+      --vibrant-orange: #F77B20;
+      --antique-pink: #B7999C;
+      --light-gray: #AAAAAA;
+      --very-light-gray: #DFE0E2;
+    }
+    
+    body{
+      background-color: var(--black-blue)
+    }
+
+    .background {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cinzel Decorative', cursive;
+      font-weight: 700;
+      background-color: var(--black-blue);
+      color: var(--very-light-gray);
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin: 10vh 0 0 0;
+      padding: 0;
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .description {
+      margin: 0;
+      font-size: 1.2rem;
+      color: var(--vibrant-orange);
+      max-width: 600px;
+      padding: 0;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <body>
+    <div class="background">
+      <img src="assets/logo-easycrit-nobg.png" alt="Logo EasyCrit" class="logo" />
+      <p class="description">Uma ferramenta divertida, intuitiva e poderosa para mestres e jogadores de RPG de mesa.</p>
+    </div>
+  </body>
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
