@@ -14,7 +14,7 @@ docker compose up
 ## Informações importantes antes de contribuir com o EasyCrit
 * Leia nosso [**Código de Conduta**](https://fga-eps-mds.github.io/2025.1-EasyCrit-docs/artefatos/guias/code-of-conduct/)
 * Leia nosso [**passo a passo sobre criação de issues**](https://fga-eps-mds.github.io/2025.1-EasyCrit-docs/artefatos/guias/how-to-issue/)
-* Leia nossa [**Política de Commits**](https://fga-eps-mds.github.io/2025.1-EasyCrit-docs/artefatos/guias/template-commits/)
+* Leia nossa [**Política de Commits**](https://fga-eps-mds.github.io/2025.1-EasyCrit-docs/artefatos/guias/commits-policy/)
 * Siga nossa [**Política de Branches**](#politica-de-branches)
 * veja como [**Criar um Pull Request**](#crie-um-pull-request)
 
