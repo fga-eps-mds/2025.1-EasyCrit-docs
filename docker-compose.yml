@@ -3,20 +3,18 @@ services:
     container_name: mkdocs
     build: .
     environment:
-      - PORT=$MKDOCS_PORT
+      - PORT=8000
     ports:
-      - "$MKDOCS_PORT:$MKDOCS_PORT"
+      - "$MKDOCS_PORT:8000"
     volumes:
       - .:/docs
-    command: mkdocs serve -a 0.0.0.0:$MKDOCS_PORT
+    command: mkdocs serve -a 0.0.0.0:8000
 
   auth:
     container_name: auth
     build:
       context: ../2025.1-EasyCrit-auth
       dockerfile: Dockerfile
-    environment:
-      - PORT=$AUTH_PORT
     ports:
-      - "$AUTH_PORT:$AUTH_PORT"
-    command: uvicorn app.main:app --host 0.0.0.0 --port $AUTH_PORT --reload
+      - "$AUTH_PORT:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
