@@ -10,6 +10,15 @@ services:
       - .:/docs
     command: mkdocs serve -a 0.0.0.0:8000
 
+  filemanager:
+    container_name: filemanager
+    build:
+      context: ../2025.1-EasyCrit-fileManager
+      dockerfile: Dockerfile
+    ports:
+      - "$FILEMANAGER_PORT:5050"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 5050 --reload
+
   auth:
     container_name: auth
     build:
