@@ -59,7 +59,6 @@ O trabalho foi entregue a tempo e apresentou boa qualidade conforme revisão rea
     - Cautela no hora de combinar horários para realizar pair programming, assim como a disponibilização da tabela gerada pelo software when2meet.
 - _Falta de definição sobre reuniões_:
     - Definir melhor os horários e frequência das reuniões para alinhamento e realização dos ritos de encerramento e início das sprints.
- 
 
 # Quadro de conhecimento
 
