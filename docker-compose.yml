@@ -27,3 +27,12 @@ services:
     ports:
       - "$AUTH_PORT:8000"
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  sessionmanager:
+    container_name: sessionmanager
+    build:
+      context: ../2025.1-EasyCrit-sessionManager
+      dockerfile: Dockerfile
+    ports:
+      - "$SESSIONMANAGER_PORT:6000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 6000 --reload
