@@ -2,6 +2,7 @@
 | Data | Versão | Modificiação | Autor(a) |
 |------|--------|--------------|----------|
 | 12/05/2025 | 1.0 | Criação do documento de review da sprint 2 | Matheus Pimentel Leal|
+| 14/05/2025 | 1.1 | Adiciona gerenciamento de riscos | Matheus Pimentel Leal |
 
 # Review Sprint 2
 A equipe começou a pegar ritimo, o que fez com que o desenvolvimento pudesse ser acelerado, mas, em detrimento de uma falha no planejamento, apenas tasks não foram concluídas à tempo da finalização da sprint.
@@ -43,7 +44,7 @@ Nenhum trabalho foi dado como entregue; Mas diversos estão em processo final, a
 
 ## Pontos de melhoria
 - Eficiência da sprint
-- Faltando realizar o gerenciamnto de riscos
+- Faltando realizar o gerenciamento de riscos
 - Melhor coordenação da força de trabalho nas tasks
 
 # Planning da Sprint 3

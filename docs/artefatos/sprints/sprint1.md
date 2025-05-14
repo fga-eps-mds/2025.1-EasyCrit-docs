@@ -2,6 +2,7 @@
 | Data | Versão | Modificiação | Autor(a) |
 |------|--------|--------------|----------|
 | 08/05/2025 | 1.0 | Criação do documento de review da sprint 1 | Matheus Pimentel Leal|
+| 14/05/2025 | 1.1 | Adicionado gerenciamento de riscos | Matheus Pimentel Leal |
 
 # Review Sprint 1
 Por ser a sprint inicial do projeto, encontramos dificuldade em estabelecer o ritmo inicial de trabalho, porém, a colaboração da equipe e a proatividade dos membros foi crucial para que as tarefas fossem entregues à tempo.
