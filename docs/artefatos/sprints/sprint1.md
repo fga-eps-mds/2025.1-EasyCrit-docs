@@ -4,7 +4,7 @@
 | 08/05/2025 | 1.0 | Criação do documento de review da sprint 1 | Matheus Pimentel Leal|
 
 # Review Sprint 1
-
+Por ser a sprint inicial do projeto, encontramos dificuldade em estabelecer o ritmo inicial de trabalho, porém, a colaboração da equipe e a proatividade dos membros foi crucial para que as tarefas fossem entregues à tempo.
 ## Tasks
 | Id | Descrição |
 |----|-----------|
@@ -53,8 +53,13 @@ O trabalho foi entregue a tempo e apresentou boa qualidade conforme revisão rea
 - Objetivo: Criação do protótipo de alta fidelidade e configuração dos ambientes
 
 ## Gerenciamento de riscos
-- Risco 1
-- Risco 2
+- _Gerenciamento de tempo_: 
+    - Analisar com cuidado o tempo disponível dos membros, para que nenhum membro se sinta sobrecarregado e nem deixe de realizar atividades de outras matérias em razão deste projeto.
+- _Conflito de horários_:
+    - Cautela no hora de combinar horários para realizar pair programming, assim como a disponibilização da tabela gerada pelo software when2meet.
+- _Falta de definição sobre reuniões_:
+    - Definir melhor os horários e frequência das reuniões para alinhamento e realização dos ritos de encerramento e início das sprints.
+ 
 
 # Quadro de conhecimento
 
