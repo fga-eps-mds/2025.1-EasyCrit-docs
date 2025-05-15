@@ -35,3 +35,61 @@ A aplicação é dividida nas seguintes camadas:
 ### 2.2 Diagrama de Relações
 
 [![dia_relacao.jpg](../assets/dia_relacao.jpg)](../assets/dia_relacao.jpg)
+
+
+### 2.3 Backend: FastAPI
+
+O FastAPI é o framework adotado no backend da aplicação EasyCrit devido à sua alta performance, simplicidade, suporte nativo a operações assíncronas e à familiaridade da equipe de desenvolvedores com a tecnologia.
+
+### Estrutura Interna e Inicialização
+
+No núcleo da aplicação, três arquivos principais orquestram a inicialização da API:
+
+- **`main.py`**: Ponto de entrada da aplicação. Cria uma instância da classe `FastAPI`, registra os roteadores (endpoints) e configura middlewares e eventos globais.
+- **`__init__.py`**: Usado em alguns módulos para organizar e expor funcionalidades internas de forma limpa.
+- **`applications.py`** *(opcional, dependendo da estrutura)*: Em projetos maiores, esse arquivo pode conter a definição e configuração principal da aplicação FastAPI, separando a inicialização de outros contextos (ex: CLI, testes, workers).
+
+Esses componentes trabalham em conjunto para configurar a aplicação, conectá-la a middlewares, bancos de dados e rotas antes de ela começar a servir requisições HTTP.
+
+### Roteamento e Manipulação de Requisições
+
+Quando uma requisição HTTP chega, o FastAPI segue os seguintes passos:
+
+1. **Recebimento da requisição**: FastAPI usa o servidor ASGI (como Uvicorn ou Hypercorn) para lidar com requisições assíncronas.
+2. **Encaminhamento (Routing)**: A classe `APIRouter`, definida no módulo `routing.py` do FastAPI, é usada para agrupar e organizar endpoints por domínio (ex: usuários, autenticação). No projeto, esses roteadores ficam no diretório:
+
+
+### 2.4 Frontend: Next.JS 
+
+O **Next.js** é o framework escolhido para o desenvolvimento do frontend da aplicação **EasyCrit**. Construído sobre o **React**, o Next.js oferece um ambiente moderno para criação de interfaces web robustas.
+
+A escolha pelo Next.js se deve à sua flexibilidade, suporte à renderização híbrida (SSR, SSG, ISR), roteamento automático baseado em arquivos e à integração facilitada com APIs REST e outras fontes de dados.
+
+---
+
+### Principais Características Utilizadas
+
+- **Pages-based routing**  
+  Cada arquivo `.tsx` na pasta `/pages` representa uma rota da aplicação. O roteamento é automático, baseado na estrutura de diretórios.
+
+- **Renderização Híbrida**
+  - **SSR (Server Side Rendering)**: Utilizado para páginas que precisam de dados atualizados a cada requisição.
+  - **SSG (Static Site Generation)**: Usado para páginas que não precisam ser atualizadas com frequência, melhorando a performance e o tempo de carregamento.
+
+- **API Routes**  
+  Caso necessário, é possível definir rotas de backend leves diretamente em `/pages/api`.
+
+- **Static Files**  
+  Arquivos estáticos como imagens, ícones e outros recursos são armazenados na pasta `/public`.
+
+---
+
+### Estrutura Geral do Projeto
+
+- **`/public/`** → Arquivos públicos (imagens, ícones, etc.)
+- **`/src/app/`** → Estrutura de rotas baseada em arquivos (App Router)
+- **`/src/components/`** → Componentes reutilizáveis (Header, Footer, etc.)
+- **`/src/styles/`** → Estilização global e módulos CSS
+- **`/src/services/`** → Funções para chamadas à API do backend FastAPI
+- **`/src/hooks/`** → Hooks customizados (ex: useAuth, useFetch)
+- **`/src/contexts/`** → Contextos globais (auth, tema, etc.)
