@@ -1,11 +1,69 @@
-version: '3'
-
 services:
   docs:
     container_name: mkdocs
     build: .
+    environment:
+      - PORT=8000
     ports:
-      - "8000:8000"
+      - "$MKDOCS_PORT:8000"
     volumes:
       - .:/docs
     command: mkdocs serve -a 0.0.0.0:8000
+
+  filemanager:
+    container_name: filemanager
+    build:
+      context: ../2025.1-EasyCrit-fileManager
+      dockerfile: Dockerfile
+    environment:
+      - PORT=5050
+    ports:
+      - "${FILEMANAGER_PORT:-5050}:5050"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 5050 --reload
+    networks:
+      - easyCrit
+    depends_on:
+      - db_easycrit
+
+  auth:
+    container_name: auth
+    build:
+      context: ../2025.1-EasyCrit-auth
+      dockerfile: Dockerfile
+    ports:
+      - "$AUTH_PORT:8080"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+    networks:
+      - easyCrit
+    depends_on:
+      - db_easycrit
+
+  sessionmanager:
+    container_name: sessionmanager
+
+    build:
+      context: ../2025.1-EasyCrit-sessionManager
+      dockerfile: Dockerfile
+    ports:
+      - "$SESSIONMANAGER_PORT:6060"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 6060 --reload
+    networks:
+      - easyCrit
+    depends_on:
+      - db_easycrit
+
+  db_easycrit:
+      image: kessjhones/multiplos-bancos:latest
+      container_name: db_easycrit
+      ports:
+        - "$POSTGRES_PORT:5432"
+      environment:
+          - POSTGRES_MULTIPLE_DATABASES=auth,sessionmanager,filemanager
+          - POSTGRES_USER=${POSTGRES_USER}
+          - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      networks:
+        - easyCrit
+
+networks:
+  easyCrit:
+    external: false
