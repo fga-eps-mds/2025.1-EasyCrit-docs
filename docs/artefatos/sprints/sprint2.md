@@ -67,4 +67,4 @@ Nenhum trabalho foi dado como entregue; Mas diversos estão em processo final, a
 
 # Quadro de conhecimento
 
-[//] <> (Anexar o quadro de conhecimento)
+![imagem do quadro de conhecimento sprint 2](./assets/quadro-conhecimento-sprint2.png)

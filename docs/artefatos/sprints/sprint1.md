@@ -63,4 +63,8 @@ O trabalho foi entregue a tempo e apresentou boa qualidade conforme revisão rea
 
 # Quadro de conhecimento
 
-[//] <> (Anexar o quadro de conhecimento)
+Na sprint 0, o quadro de conhecimento estava com os seguintes dados:
+![imagem do quadro de conhecimento sprint 0](./assets/quadro-conhecimento-sprint0.png)
+
+Da sprint 0 para a sprint 1, tivemos algumas atualizações:
+![imagem do quadro de conhecimento sprint 1](./assets/quadro-conhecimento-sprint1.png)
