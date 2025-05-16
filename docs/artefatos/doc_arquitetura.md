@@ -6,6 +6,7 @@
 |Data|Versão|Descrição|Autor(es)|
 |----|------|---------|---------|
 |15/05/2025|0.1|Versão inicial|[Philipe Sousa](https://github.com/PhilipeSousa)|
+|16/05/2025|0.2|Adiciona Diagrama de sequência|[Philipe Sousa](https://github.com/PhilipeSousa)|
 
 ## 1. Introdução
 
@@ -15,8 +16,9 @@ Este documento tem como propósito apresentar uma visão geral da arquitetura de
 ### 1.2 Escopo
 O **EasyCrit** é uma aplicação web desenvolvida por estudantes da Universidade de Brasília (UnB), voltada para a prática de RPG de mesa em ambiente virtual. A plataforma busca oferecer uma experiência acessível, intuitiva e eficiente para jogadores e mestres de RPG, facilitando a organização de sessões e a interação entre os participantes. Este documento contempla os aspectos técnicos essenciais da arquitetura do sistema, estabelecendo diretrizes que devem ser seguidas durante seu desenvolvimento.
 
+---
 
-## 2. Visão Geral da Arquitetura
+## 2. Representação da Arquitetura
 
 ### 2.1 Descrição Geral
 
@@ -36,6 +38,7 @@ A aplicação é dividida nas seguintes camadas:
 
 [![dia_relacao.jpg](../assets/dia_relacao.jpg)](../assets/dia_relacao.jpg)
 
+*Diagrama elaborado por Kess, 2025.*
 
 ### 2.3 Backend: FastAPI
 
@@ -67,7 +70,7 @@ A escolha pelo Next.js se deve à sua flexibilidade, suporte à renderização h
 
 ---
 
-### Principais Características Utilizadas
+#### Principais Características Utilizadas
 
 - **Pages-based routing**  
   Cada arquivo `.tsx` na pasta `/pages` representa uma rota da aplicação. O roteamento é automático, baseado na estrutura de diretórios.
@@ -82,9 +85,8 @@ A escolha pelo Next.js se deve à sua flexibilidade, suporte à renderização h
 - **Static Files**  
   Arquivos estáticos como imagens, ícones e outros recursos são armazenados na pasta `/public`.
 
----
 
-### Estrutura Geral do Projeto
+#### Estrutura Geral do Projeto
 
 - **`/public/`** → Arquivos públicos (imagens, ícones, etc.)
 - **`/src/app/`** → Estrutura de rotas baseada em arquivos (App Router)
@@ -93,3 +95,13 @@ A escolha pelo Next.js se deve à sua flexibilidade, suporte à renderização h
 - **`/src/services/`** → Funções para chamadas à API do backend FastAPI
 - **`/src/hooks/`** → Hooks customizados (ex: useAuth, useFetch)
 - **`/src/contexts/`** → Contextos globais (auth, tema, etc.)
+
+---
+
+### 3. Diagrama de Sequência
+
+O diagrama de sequência a seguir demonstra a interação entre os principais componentes do sistema durante o processo descrito. O modelo foi elaborado pelo autor com base no comportamento esperado da aplicação.
+
+[![Diagrama Sequencia](../assets/dia_seq.png)](../assets/dia_seq.png)
+
+*Diagrama elaborado por Philipe, 2025.*
