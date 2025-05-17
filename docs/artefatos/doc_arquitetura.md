@@ -7,6 +7,7 @@
 |----|------|---------|---------|
 |15/05/2025|0.1|Versão inicial|[Philipe Sousa](https://github.com/PhilipeSousa)|
 |16/05/2025|0.2|Adiciona Diagrama de sequência|[Philipe Sousa](https://github.com/PhilipeSousa)|
+|17/05/2025|0.3|Adiciona estrutura de pastas FastAPI|[Kess Jhones](https://github.com/KessJhones)|
 
 ## 1. Introdução
 
@@ -44,23 +45,37 @@ A aplicação é dividida nas seguintes camadas:
 
 O FastAPI é o framework adotado no backend da aplicação EasyCrit devido à sua alta performance, simplicidade, suporte nativo a operações assíncronas e à familiaridade da equipe de desenvolvedores com a tecnologia.
 
-### Estrutura Interna e Inicialização
+### Estrutura Interna
 
-No núcleo da aplicação, três arquivos principais orquestram a inicialização da API:
+[![Estrutura Interna](../assets/estrutura_pasta_fastapi.png)](../assets/estrutura_pasta_fastapi.png)
+*Diagrama elaborado por Kess, 2025.*
 
-- **`main.py`**: Ponto de entrada da aplicação. Cria uma instância da classe `FastAPI`, registra os roteadores (endpoints) e configura middlewares e eventos globais.
-- **`__init__.py`**: Usado em alguns módulos para organizar e expor funcionalidades internas de forma limpa.
-- **`applications.py`** *(opcional, dependendo da estrutura)*: Em projetos maiores, esse arquivo pode conter a definição e configuração principal da aplicação FastAPI, separando a inicialização de outros contextos (ex: CLI, testes, workers).
+#### Descrição da Estrutura de Pastas
 
-Esses componentes trabalham em conjunto para configurar a aplicação, conectá-la a middlewares, bancos de dados e rotas antes de ela começar a servir requisições HTTP.
+A estrutura de pastas dos microsserviços segue um padrão organizado e modular:
 
-### Roteamento e Manipulação de Requisições
+> **Nota sobre os arquivos `__init__.py`**: Estes arquivos estão presentes em vários diretórios do projeto e servem para identificar os diretórios como pacotes Python, permitindo a importação de módulos entre diferentes partes da aplicação.
 
-Quando uma requisição HTTP chega, o FastAPI segue os seguintes passos:
+- **`service/`**: Diretório principal do microsserviço
+  - **`app/`**: Contém toda a lógica de aplicação
+    - **`main.py`**: Ponto de entrada da aplicação FastAPI
+    - **`models.py`**: Define os modelos de dados (entidades) utilizados em conjunto com o ORM (SQLAlchemy) para mapear as tabelas do banco de dados para objetos Python
+    - **`schemas.py`**: Define os esquemas de validação e serialização usando Pydantic
+    
+    - **`routers/`**: Contém as definições de rotas da API
+      - Diversos arquivos que organizam as rotas por funcionalidade
+      
+    - **`database/`**: Gerencia a conexão e operações com o banco de dados
+      - **`database.py`**: Configuração de conexão com o banco de dados
+  
+  - **`tests/`**: Contém os testes automatizados do serviço
+    - Diversos arquivos organizados por funcionalidade
+  
+  - **`Dockerfile`**: Instruções para a criação da imagem Docker
+  - **`requirements.txt`**: Dependências Python necessárias
+  - **`README.md`**: Documentação específica do microsserviço
 
-1. **Recebimento da requisição**: FastAPI usa o servidor ASGI (como Uvicorn ou Hypercorn) para lidar com requisições assíncronas.
-2. **Encaminhamento (Routing)**: A classe `APIRouter`, definida no módulo `routing.py` do FastAPI, é usada para agrupar e organizar endpoints por domínio (ex: usuários, autenticação). No projeto, esses roteadores ficam no diretório:
-
+Esta estrutura foi projetada para promover a separação de responsabilidades, facilitar a manutenção e permitir o crescimento sustentável de cada microsserviço.
 
 ### 2.4 Frontend: Next.JS 
 
