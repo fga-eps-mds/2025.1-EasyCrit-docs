@@ -20,8 +20,6 @@ A prototipagem das telas visuais do “EasyCrit” foi feita a partir de modelos
 Após finalizar o modelo de baixa fidelidade, com todas as funcionalidades originais, refinando aspectos estéticos — tipografia, paleta de cores e fluxos de navegação — e incorporando interações mais realistas, implementamos nossa versão de alta fidelidade do protótipo com auxílio da ferramenta Figma. Clique no link abaixo para testa-lo: [High-Fidelity](https://www.figma.com/proto/iVipSzEzRnHX7Mre3oCAdw/High-Fidelity-Interactive-Prototype---MDS?node-id=1-92&t=7ASk4bFTbNpMcqNt-1)
 
 
-## Logo
-![Logo](./pre_sprints/assets/logo.png)
 
 
 
