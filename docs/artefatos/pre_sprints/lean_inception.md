@@ -35,7 +35,7 @@ Na etapa de Lean Inception feita pelo grupo responsável de EPS e MDS do projeto
 O principal obejtivo dessa etapa, além de contribuir para o entedimento do produto é identificar os aspectos positivos e negativos do produto sobre o produto ser ou fazer algo. Para essa atividade os contribuintes separaram em quatro quadrantes o que entendem que o produto é, não é, faz e não faz. Assim, por meio desses quadrantes o grupo tem maior entendimento da categoria do produto e o que de fato espera-se que ele seja capaz de fazer e o que não deve fazer.
 
 As categorias da matriz podem ser encontradas no [board da ferramentea slice da wBrain](https://slice.wbrain.me/#/board/NvGwGTDRhgbNWl6hyT) e na imagem abaixo
-![](./assets/matriz_enefnf.png)
+[![](./assets/matriz_enefnf.png)](./assets/matriz_enefnf.png)
 
 ## Segunda etapa
 ### Personas
@@ -74,7 +74,7 @@ Foram criadas **três** jornadas de usuário, uma com base na persona do Mestre 
 ### Brainstorming de funcionalidades
 
 Na etapa de brainstorming de funcionalidades foi utilizada a ferramente slice da wBrain, que fazer a criação, organização e manejo de boards. Essa etapa foi realizada em 2 dias, para que fossem coletadas a maior quantidade de ideias sem refino. O resultado do brainstorming pode ser encontrado na imagem abaixo e no [board do slice](https://slice.wbrain.me/#/board/TjoFKDzPfvTOI6TTQu)
-![board do slice](./assets/brainstorming.png)
+[![board do slice](./assets/brainstorming.png)](./assets/brainstorming.png)
 
 ### Revisão técnica
 
@@ -84,7 +84,7 @@ Após o brainstorming, é necessário realizar a revisão técnica das funcional
 
 Os cards azuis representam épicos, e o único card laranja representa um requisito não funcional do sistema, mas que também pode representar a funcionalidade "entrar em campanha"
 
-![Oque-como-fazer](./assets/revisao_tec_miro.jpg)
+[![Oque-como-fazer](./assets/revisao_tec_miro.jpg)](./assets/revisao_tec_miro.jpg)
 
 
 ### Sequenciador
@@ -94,4 +94,4 @@ Com a lista de funcionalidades refinadas após a revisão técnica, foi montado 
 
 ### Canvas MVP
 O canvas MVP do projeto EasyCrit traz uma representação visual do MVP do projeto, passando pelas funcionalidades levantadas, as personas envolvidas, as jornadas de usuário contempladas, qual o resultado esperado com a disponibilização do projeto em estado de MVP e quais métricas serão utilizadas. Além de trazer uma visão do custo para realizar o desenvolvimento e o cronograma de desenvolvimento a ser seguido. O artefato pode ser visto na imagem abaixo:
-![canvas MVP](./assets/Canvas_MVP.jpg)
+[![canvas MVP](./assets/Canvas_MVP.jpg)](./assets/Canvas_MVP.jpg)
