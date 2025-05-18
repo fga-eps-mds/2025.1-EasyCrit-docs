@@ -61,6 +61,16 @@ Nesta etapa, toda a equipe colaborou para mapear os usuários potenciais do neg�
 | _Objetivos_          | Ter um RPG para jogar enquanto não chega a próxima sessão da campanha presencial; Facilidade ao entrar no jogo; Gerenciar ficha do personagem que interpreta; Passar o tempo; Ter um motivo para interagir com os amigos periodicamente; Aprender a jogar/experimentar; Interagir com o mundo criado pelo mestre  |
 | _Comportamento_      | síndrome de protagonista (interrompe o mestre toda hora), demora demais nos turnos, personagem genérico, quita no meio da sessão/campanha; agressivo com os NPCs; Não sabe o que está jogando, faz suspense ao jogar um d20, nunca terminou a ficha, finaliza o passado do personagem na ultima sessão; Tenta vencer mais que se divertir  |
 
+### Jornadas de usuários
+Foram criadas **três** jornadas de usuário, uma com base na persona do Mestre de RPG e duas com base na persona do jogador de RPG. Elas podem ser encontradas nas imagens abaixo:
+
+**Jornada 1**
+![jornada 1](./assets/Jornadas_de_usuario-Jornada_de_usuario_1.jpg)
+**Jornada 2**
+![jornada 2](./assets/Jornadas_de_usuario-Jornada_de_usuário_2.jpg)
+**Jornada 3**
+![jornada 3](./assets/Jornadas_de_usuario-Jornada_de_usuário_3.jpg)
+
 ### Brainstorming de funcionalidades
 
 Na etapa de brainstorming de funcionalidades foi utilizada a ferramente slice da wBrain, que fazer a criação, organização e manejo de boards. Essa etapa foi realizada em 2 dias, para que fossem coletadas a maior quantidade de ideias sem refino. O resultado do brainstorming pode ser encontrado na imagem abaixo e no [board do slice](https://slice.wbrain.me/#/board/TjoFKDzPfvTOI6TTQu)
@@ -74,18 +84,13 @@ Após o brainstorming, é necessário realizar a revisão técnica das funcional
 
 Os cards azuis representam épicos, e o único card laranja representa um requisito não funcional do sistema, mas que também pode representar a funcionalidade "entrar em campanha"
 
-### Jornadas de usuários
-Foram criadas **três** jornadas de usuário, uma com base na persona do Mestre de RPG e duas com base na persona do jogador de RPG. Elas podem ser encontradas nas imagens abaixo:
+![Oque-como-fazer](./assets/revisao_tec_miro.jpg)
 
-**Jornada 1**
-![jornada 1](./assets/Jornadas_de_usuario-Jornada_de_usuario_1.jpg)
-**Jornada 2**
-![jornada 2](./assets/Jornadas_de_usuario-Jornada_de_usuário_2.jpg)
-**Jornada 3**
-![jornada 3](./assets/Jornadas_de_usuario-Jornada_de_usuário_3.jpg)
 
 ### Sequenciador
-Em construção
+Com a lista de funcionalidades refinadas após a revisão técnica, foi montado o sequenciador para definir a ordem ideal de implementação.
+
+![Sequenciador](./assets/sequenciador.jpg)
 
 ### Canvas MVP
 O canvas MVP do projeto EasyCrit traz uma representação visual do MVP do projeto, passando pelas funcionalidades levantadas, as personas envolvidas, as jornadas de usuário contempladas, qual o resultado esperado com a disponibilização do projeto em estado de MVP e quais métricas serão utilizadas. Além de trazer uma visão do custo para realizar o desenvolvimento e o cronograma de desenvolvimento a ser seguido. O artefato pode ser visto na imagem abaixo:
