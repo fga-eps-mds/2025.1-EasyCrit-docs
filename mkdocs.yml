@@ -30,3 +30,5 @@ nav:
     - Sprints:
       - Sprint 1: artefatos/sprints/sprint1.md
       - Sprint 2: artefatos/sprints/sprint2.md
+    - Releases:
+      - Release R1: artefatos/releases/release1.md
