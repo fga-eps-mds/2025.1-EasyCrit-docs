@@ -120,3 +120,8 @@ O diagrama de sequência a seguir demonstra a interação entre os principais co
 [![Diagrama Sequencia](../assets/dia_seq.png)](../assets/dia_seq.png)
 
 *Diagrama elaborado por Philipe, 2025.*
+
+
+### 4. Diagrama Lógico do Banco de Dados
+
+[![Diagrama ER](../assets/diagrama_bancos.png)](../assets/diagrama_bancos.png)
