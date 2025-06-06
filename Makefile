@@ -1,62 +1,23 @@
-.PHONY: down up stop logs up-docs down-docs stop-docs up-auth down-auth stop-auth up-filemanager down-filemanager stop-filemanager up-sessionmanager down-sessionmanager stop-sessionmanager
+.PHONY: down build up debug logs
 
-# Comandos para todos os serviços
-down:
-	docker compose down
+build:
+	docker compose build
+
+rebuild: down up
 
 up:
 	docker compose up -d
 
-stop:
-	docker compose stop
+down:
+	docker compose down
+
+debug: down
+	DEBUG=1 docker compose up -d
 
 logs:
-	docker compose logs -f
+	docker compose logs --tail=10 -f
 
-# Documentação (mkdocs)
-up-docs:
-	docker compose up -d docs
+login:
+	docker compose exec -it wiki /bin/bash
 
-down-docs:
-	docker compose stop docs
-	docker compose rm -f docs
-
-stop-docs:
-	docker compose stop docs
-
-# Serviço de Autenticação
-up-auth:
-	docker compose up -d auth
-
-down-auth:
-	docker compose stop auth
-	docker compose rm -f auth
-
-stop-auth:
-	docker compose stop auth
-
-# Gerenciador de Arquivos
-up-filemanager:
-	docker compose up -d filemanager
-
-down-filemanager:
-	docker compose stop filemanager
-	docker compose rm -f filemanager
-
-stop-filemanager:
-	docker compose stop filemanager
-
-# Gerenciador de Sessões
-up-sessionmanager:
-	docker compose up -d sessionmanager
-
-down-sessionmanager:
-	docker compose stop sessionmanager
-	docker compose rm -f sessionmanager
-
-stop-sessionmanager:
-	docker compose stop sessionmanager
-
-# Comandos auxiliares
-status:
-	docker compose ps
+lanche-feliz: down build debug logs
