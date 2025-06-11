@@ -20,11 +20,14 @@
 ### 📁 Estrutura de pastas
 Para o funcionamento correto do projeto, seus repositórios devem estar organizados da seguinte forma:
 
-📁 Pasta principal
-├── 📁 2025.1-EasyCrit-docs (este repositório)
-├── 📁 2025.1-EasyCrit-auth
-├── 📁 2025.1-EasyCrit-fileManager
-└── 📁 2025.1-EasyCrit-sessionManager
+>[!note]
+> ```
+> 📁 Pasta principal
+> ├── 📁 2025.1-EasyCrit-docs (este repositório)
+> ├── 📁 2025.1-EasyCrit-auth
+> ├── 📁 2025.1-EasyCrit-fileManager
+> └── 📁 2025.1-EasyCrit-sessionManager
+> ```
 
 >[!warning]
 > - Seguir a estrutura de pastas proposta acima é crucial para que o Docker Compose possa acessá-los corretamente.
