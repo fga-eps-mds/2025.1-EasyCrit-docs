@@ -89,7 +89,7 @@ Exeutar apenas o microserviço de gerenciamento de arquivos:
 make up-files
 ```
 
->[!info]
+>[!important]
 > Para fazer com que a execução pare, basta apenas substituir a palavra `up` por `down` em cada um dos comandos específicos.
 
 ## Acessando os serviços
