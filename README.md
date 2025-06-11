@@ -43,7 +43,7 @@ No diretório deste projeto, execute o script `setup.sh` usando o comando:
 
 >[!important]
 > - Preencha o arquivo .env com todos os parâmetros, para garantir o funcionamento correto da aplicação.
-> - Confira se os script executou corretamente verificando a existência dos arquivos `docker-compose.yml`, `Makefile` e `.env` na **Pasta principal*.
+> - Confira se os script executou corretamente verificando a existência dos arquivos `docker-compose.yml`, `Makefile` e `.env` na **Pasta principal**.
 
 Logo a seguir, o projeto pode ser executado de duas maneiras, sendo elas: usando a ferramenta `docker compose` diretamente ou usando a ferramenta `make`.
 
