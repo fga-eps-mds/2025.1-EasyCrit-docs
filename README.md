@@ -29,6 +29,8 @@ Para o funcionamento correto do projeto, seus repositórios devem estar organiza
 > └── 📁 2025.1-EasyCrit-sessionManager
 > ```
 
+Onde a **Pasta principal** é a pasta raiz anterior à todos os projetos. Por exemplo, se o caminho para este repositório é: `/home/jessepinkman/Documents/EasyCrit/2025.1-EasyCrit-docs`, a **Pasta principal** seria a pasta de nome **EasyCrit**.
+
 >[!warning]
 > - Seguir a estrutura de pastas proposta acima é crucial para que o Docker Compose possa acessá-los corretamente.
 > - Também é necessário evitar renomear as pastas dos projetos, seugindo sempre a convenção proposta acima.
@@ -64,7 +66,7 @@ onde `$ARGS` pode ser substituído pelos seguintes valores:
 - ou apenas desconsiderar a variável $ARGS, fazendo com que todos os projetos sejam executados.
 
 #### Comandos disponíveis via Makefile:
-Executar todos os projetos:
+Executar todos os projetos (exceto a wiki):
 ```bash
 make up
 ```
@@ -92,28 +94,15 @@ make up-files
 >[!important]
 > Para fazer com que a execução pare, basta apenas substituir a palavra `up` por `down` em cada um dos comandos específicos.
 
-## Acessando os serviços
+## Acessando os serviços em ambiente de desenvolvimento (local)
 Após iniciar os serviços, você pode acessá-los nos seguintes endereços:
 
-- **Documentação (Wiki)**: http://localhost:8000
-- **Serviço de Autenticação**: http://localhost:5000
-- **Gerenciador de Arquivos**: http://localhost:5050
-- **Gerenciador de Sessões**: http://localhost:6060
+- **Documentação (Wiki)**: http://localhost:WIKI_PORT
+- **Serviço de Autenticação**: http://localhost:AUTH_PORT
+- **Gerenciador de Arquivos**: http://localhost:FILES_PORT
+- **Gerenciador de Sessões**: http://localhost:SESSION_PORT
+- **Frontend**: http://localhost:FRONTEND_PORT
 
-### Parando os serviços
-Para parar os serviços, você pode usar:
-
-```bash
-# Parar todos os serviços sem remover os contêineres
-make stop
-
-# Parar e remover todos os contêineres
-make down
-
-# Parar serviços específicos
-make stop-docs
-make stop-auth
-make stop-filemanager
-make stop-sessionmanager
-```
-
+>[!note]
+> As variáveis `WIKI_PORT`, `AUTH_PORT`, `FILES_PORT`, `SESSION_PORT` e `FRONTEND_PORT` devem ser setadas no arquivo .env presente na **Pasta principal** e pode-se substituir a varivável pelo seu valor na url.
+> Por exemplo, se `WIKI_PORT=3000`, a url para documentação ficaria: http://localhost:3000

@@ -1,10 +1,105 @@
-name: easycrit-wiki
+name: easycrit
+
+networks:
+  easy-crit:
+    driver: bridge
 
 services:
-  wiki:
-    container_name: mkdocs
-    build: .
-    ports:
-      - "8000:8000"
+  front:
+    container_name: easycrit-front
+    image: easycrit
+    build:
+      context: ./2025.1-EasyCrit-frontend
+      target: dev
+      dockerfile: Dockerfile
     volumes:
-      - .:/docs
+      - ./2025.1-EasyCrit-frontend:/frontend
+      - /frontend/node_modules
+      - /frontend/next
+    ports:
+      - "${FRONTEND_PORT}:3000"
+
+  docs:
+    container_name: wiki
+    build: ./2025.1-EasyCrit-docs
+    networks:
+      - easy-crit
+    ports:
+      - "${WIKI_PORT}:8000"
+    volumes:
+      - ./2025.1-EasyCrit-docs:/docs
+  
+  auth:
+    container_name: auth
+    build: ./2025.1-EasyCrit-auth
+    command: uvicorn app.main:app --host 0.0.0.0 --port ${AUTH_PORT:-8000} --reload
+    networks:
+      - easy-crit
+    volumes:
+      - ./2025.1-EasyCrit-auth:/auth
+    ports:
+      - "${AUTH_PORT:-8000}:${AUTH_PORT:-8000}"
+    environment:
+      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
+    depends_on:
+      - postgres
+
+  session:
+    container_name: session
+    build: ./2025.1-EasyCrit-sessionManager
+    command: uvicorn app.main:app --host 0.0.0.0 --port ${SESSION_PORT:-8000} --reload
+    networks:
+      - easy-crit
+    volumes:
+      - ./2025.1-EasyCrit-sessionManager:/sessionManager
+    ports:
+      - "${SESSION_PORT:-8000}:${SESSION_PORT:-8000}"
+    environment:
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+    depends_on:
+      - redis
+
+  files:
+    container_name: files
+    build: ./2025.1-EasyCrit-fileManager
+    command: uvicorn app.main:app --host 0.0.0.0 --port ${FILES_PORT:-8000} --reload
+    networks:
+      - easy-crit
+    volumes:
+      - ./2025.1-EasyCrit-fileManager:/fileManager
+    ports:
+      - "${FILES_PORT:-8000}:${FILES_PORT:-8000}"
+    environment:
+      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
+    depends_on:
+      - postgres
+
+  postgres:
+    container_name: postgres
+    image: bitnami/postgresql:latest
+    networks:
+      - easy-crit
+    restart: always
+    environment:
+      POSTGRESQL_USERNAME: ${PG_USER}
+      POSTGRESQL_PASSWORD: ${PG_PASSWORD}
+    ports:
+      - "${PG_PORT}:5432"
+    volumes:
+      - pgData:/var/lib/postgresql/data
+
+  redis:
+    container_name: redis
+    image: redis:latest
+    networks:
+      - easy-crit
+    restart: always
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - redisData:/data
+
+volumes:
+  pgData:
+  redisData:
