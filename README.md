@@ -1,4 +1,4 @@
-<div align="center"><img style="width: 100px" id="logo EasyCrit" src="docs/assets/logo-easycrit-rounded.png"/></div><br/>
+<div align="center"><img style="width: 200px" id="logo EasyCrit" src="docs/assets/logo-easycrit-rounded.png"/></div><br/>
 
 [EasyCrit](link_do_projeto_aqui) é uma plataforma para jogar RPGs de mesa de forma virtual, desenvolvido por alunos da [Universidade de Brasília - UnB](https://www.unb.br/), com o objetivo de facilitar e fazer com que a experiência de jogar RPG online seja de facil acesso e que seja intuitiva.
 
@@ -46,6 +46,7 @@ No diretório deste projeto, execute o script `setup.sh` usando o comando:
 >[!important]
 > - Preencha o arquivo .env com todos os parâmetros, para garantir o funcionamento correto da aplicação.
 > - Confira se os script executou corretamente verificando a existência dos arquivos `docker-compose.yml`, `Makefile` e `.env` na **Pasta principal**.
+> - Caso o script não possa ser executado, tente utilizar o comando ```chmod +x setup.sh```
 
 Logo a seguir, o projeto pode ser executado de duas maneiras, sendo elas: usando a ferramenta `docker compose` diretamente ou usando a ferramenta `make`.
 
