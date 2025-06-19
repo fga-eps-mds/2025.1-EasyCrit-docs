@@ -12,66 +12,72 @@ services:
       context: ./2025.1-EasyCrit-frontend
       target: dev
       dockerfile: Dockerfile
+    env_file: 
+      - .env
+    environment:
+      - PORT=${FRONTEND_PORT}
     volumes:
       - ./2025.1-EasyCrit-frontend:/frontend
       - /frontend/node_modules
       - /frontend/next
     ports:
-      - "${FRONTEND_PORT}:3000"
+      - "${FRONTEND_PORT:-8000}:${FRONTEND_PORT:-8000}"
 
   docs:
     container_name: wiki
     build: ./2025.1-EasyCrit-docs
+    environment:
+      - PORT=${WIKI_PORT}
     networks:
       - easy-crit
     ports:
-      - "${WIKI_PORT}:8000"
+      - "${WIKI_PORT:-3000}:${WIKI_PORT:-3000}"
     volumes:
       - ./2025.1-EasyCrit-docs:/docs
   
   auth:
     container_name: auth
     build: ./2025.1-EasyCrit-auth
-    command: uvicorn app.main:app --host 0.0.0.0 --port ${AUTH_PORT:-8000} --reload
+    environment:
+      - PORT=${AUTH_PORT}
+      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
     networks:
       - easy-crit
     volumes:
       - ./2025.1-EasyCrit-auth:/auth
     ports:
-      - "${AUTH_PORT:-8000}:${AUTH_PORT:-8000}"
-    environment:
-      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
+      - "${AUTH_PORT:-8001}:${AUTH_PORT:-8001}"
     depends_on:
       - postgres
 
   session:
     container_name: session
     build: ./2025.1-EasyCrit-sessionManager
-    command: uvicorn app.main:app --host 0.0.0.0 --port ${SESSION_PORT:-8000} --reload
+    environment:
+      - PORT=${SESSION_PORT}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
     networks:
       - easy-crit
     volumes:
       - ./2025.1-EasyCrit-sessionManager:/sessionManager
     ports:
-      - "${SESSION_PORT:-8000}:${SESSION_PORT:-8000}"
-    environment:
-      - REDIS_HOST=${REDIS_HOST}
-      - REDIS_PORT=${REDIS_PORT}
+      - "${SESSION_PORT:-8002}:${SESSION_PORT:-8002}"
     depends_on:
       - redis
 
   files:
     container_name: files
     build: ./2025.1-EasyCrit-fileManager
-    command: uvicorn app.main:app --host 0.0.0.0 --port ${FILES_PORT:-8000} --reload
+    environment:
+      - PORT=${FILES_PORT}
+      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
     networks:
       - easy-crit
     volumes:
       - ./2025.1-EasyCrit-fileManager:/fileManager
     ports:
-      - "${FILES_PORT:-8000}:${FILES_PORT:-8000}"
-    environment:
-      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
+      - "${FILES_PORT:-8003}:${FILES_PORT:-8003}"
     depends_on:
       - postgres
 
