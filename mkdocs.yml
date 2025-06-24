@@ -27,6 +27,7 @@ nav:
     - Planejamento:
       - Documento de arquitetura: artefatos/doc_arquitetura.md
       - Protótipo de Alta Fidelidade: artefatos/pre_sprints/prototipo-documentacao.md
+      - Product Backlog: artefatos/product_backlog.md
     - Sprints:
       - Sprint 1: artefatos/sprints/sprint1.md
       - Sprint 2: artefatos/sprints/sprint2.md
