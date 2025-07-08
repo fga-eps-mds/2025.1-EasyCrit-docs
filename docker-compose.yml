@@ -40,11 +40,15 @@ services:
     build: ./2025.1-EasyCrit-auth
     environment:
       - PORT=${AUTH_PORT}
-      - DATABASE_URL="postgresql://${PG_USER}:${PG_PASSWORD}@postgres:5432/"
+      - USER=${PG_USER}
+      - PASSWORD=${PG_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - ENV=${ENV}
+      - DB_PORT=${PG_PORT}
     networks:
       - easy-crit
     volumes:
-      - ./2025.1-EasyCrit-auth:/auth
+      - ./2025.1-EasyCrit-auth/app:/app
     ports:
       - "${AUTH_PORT:-8001}:${AUTH_PORT:-8001}"
     depends_on:
@@ -60,7 +64,7 @@ services:
     networks:
       - easy-crit
     volumes:
-      - ./2025.1-EasyCrit-sessionManager:/sessionManager
+      - ./2025.1-EasyCrit-sessionManager/app:/app
     ports:
       - "${SESSION_PORT:-8002}:${SESSION_PORT:-8002}"
     depends_on:
@@ -75,7 +79,7 @@ services:
     networks:
       - easy-crit
     volumes:
-      - ./2025.1-EasyCrit-fileManager:/fileManager
+      - ./2025.1-EasyCrit-fileManager/app:/app
     ports:
       - "${FILES_PORT:-8003}:${FILES_PORT:-8003}"
     depends_on:
@@ -90,6 +94,7 @@ services:
     environment:
       POSTGRESQL_USERNAME: ${PG_USER}
       POSTGRESQL_PASSWORD: ${PG_PASSWORD}
+      POSTGRESQL_DATABASE: ${DB_NAME}
     ports:
       - "${PG_PORT}:5432"
     volumes:
