@@ -45,6 +45,7 @@ services:
       - DB_NAME=${DB_NAME}
       - ENV=${ENV}
       - DB_PORT=${PG_PORT}
+      - SECRET_KEY=${SECRET_KEY}
     networks:
       - easy-crit
     volumes:
