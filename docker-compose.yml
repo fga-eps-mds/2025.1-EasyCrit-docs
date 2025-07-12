@@ -22,6 +22,8 @@ services:
       - /frontend/next
     ports:
       - "${FRONTEND_PORT:-8000}:${FRONTEND_PORT:-8000}"
+    networks:
+      - easy-crit 
 
   docs:
     container_name: wiki
