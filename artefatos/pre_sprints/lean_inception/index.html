@@ -1,0 +1,1843 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../guias/entity-relationship-diagram/">
+      
+      
+        <link rel="next" href="../quadro_de_conhecimentos/">
+      
+      
+      <link rel="icon" href="../../../assets/logo-easycrit-rounded.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Lean Inception - EasyCrit Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lean-inception" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="EasyCrit Wiki" class="md-header__button md-logo" aria-label="EasyCrit Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo-easycrit-rounded.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EasyCrit Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lean Inception
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2025.1-EasyCrit-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/contributing/" class="md-tabs__link">
+          
+  
+  
+  Guias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Pré projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../doc_arquitetura/" class="md-tabs__link">
+          
+  
+  
+  Planejamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sprints/sprint01/" class="md-tabs__link">
+          
+  
+  
+  Sprints
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../releases/release1/" class="md-tabs__link">
+          
+  
+  
+  Releases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../post_mortem/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Post Mortem
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="EasyCrit Wiki" class="md-nav__button md-logo" aria-label="EasyCrit Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/logo-easycrit-rounded.png" alt="logo">
+
+    </a>
+    EasyCrit Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2025.1-EasyCrit-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guias
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Como Contribuir
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/code-of-conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Código de conduta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/visual-identity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de identidade visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/commits-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Política de commits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/how-to-issue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Como abrir uma issue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/template-sprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template de documentação de sprint
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/entity-relationship-diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diagrama Entidade-Relacionamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré projeto
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Pré projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lean Inception
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lean Inception
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-lean-inception" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é Lean Inception
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Siglas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeira-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeira etapa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeira etapa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão do produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-nao-e-faz-nao-faz" class="md-nav__link">
+    <span class="md-ellipsis">
+      É - Não é - Faz - Não faz
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segunda-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segunda etapa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segunda etapa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mestre-de-rpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mestre de RPG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jogador-de-rpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jogador de RPG
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jornadas-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jornadas de usuários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brainstorming-de-funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brainstorming de funcionalidades
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisao-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisão técnica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequenciador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequenciador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canvas-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canvas MVP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quadro_de_conhecimentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quadro de Conhecimentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doc_arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documento de arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipo-documentacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Protótipo de Alta Fidelidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product_backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sprints
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprints/sprint11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprint 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Releases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Releases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release R1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/release2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release RN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../post_mortem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Post Mortem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-lean-inception" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é Lean Inception
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Siglas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeira-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeira etapa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeira etapa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão do produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-nao-e-faz-nao-faz" class="md-nav__link">
+    <span class="md-ellipsis">
+      É - Não é - Faz - Não faz
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segunda-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segunda etapa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segunda etapa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mestre-de-rpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mestre de RPG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jogador-de-rpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jogador de RPG
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jornadas-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jornadas de usuários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brainstorming-de-funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brainstorming de funcionalidades
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisao-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revisão técnica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequenciador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequenciador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canvas-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canvas MVP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="lean-inception">Lean inception</h1>
+<p>Este documento resume os resultados obtidos ao final de cada etapa realizada do processo de Lean Inception</p>
+<h2 id="o-que-e-lean-inception">O que é Lean Inception</h2>
+<p>É um método utilizado por metodologias ágeis para compreender e direcionar o projeto em seu estágio inicial. Ele auxilia no entedimento das principais funcinalidades que os clientes estimam para o produto, visando construir a definição do MVP (Produto Mínimo Viável).</p>
+<p>O Lean Inception é dividido em algumas atividades, feitas em conjunto pela equipe, a fim de chegarem a um melhor entendimento do produto e decidir o MVP.</p>
+<h2 id="historico-de-versoes">Histórico de versões</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21/04/2025</td>
+<td>0.1</td>
+<td>Adição da primeira versão do documento</td>
+<td>Matheus Pimentel Leal</td>
+</tr>
+<tr>
+<td>23/04/2025</td>
+<td>0.2</td>
+<td>Adiciona Tópico de É, Não É, Faz, Não Faz</td>
+<td>Philipe de Sousa Barros</td>
+</tr>
+<tr>
+<td>28/04/2025</td>
+<td>0.3</td>
+<td>Adiciona segunda etapa do Lean Inception</td>
+<td>Matheus Pimentel Leal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="siglas">Siglas</h2>
+<table>
+<thead>
+<tr>
+<th>Sigla</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MVP</td>
+<td><em>Minimum Viable Product</em></td>
+</tr>
+<tr>
+<td>EPS</td>
+<td>Engenharia do Produto de Software</td>
+</tr>
+<tr>
+<td>MDS</td>
+<td>Métodos de Desenvolvimento de Software</td>
+</tr>
+<tr>
+<td>UX</td>
+<td><em>User Experience</em></td>
+</tr>
+<tr>
+<td>RPG</td>
+<td><em>Role Playing Game</em></td>
+</tr>
+</tbody>
+</table>
+<p>Na etapa de Lean Inception feita pelo grupo responsável de EPS e MDS do projeto EasyCrit, foi decidido pela realização em 4 etapas: Na primeira etapa ficou definido que o grupo definiria a visão do produto, a matriz "É - Não é - Faz - Não faz", a criação das personas e o começo do brainstorming de funcionalidades. Já na segunda etapa, as personas criadas passaram por um refinamento posterior, além da finalização da etapa de brainstorming de funcionalidades. A terceira etapa teve a responsabilidade de realizar a revisão e refinamento técnico de Experiência de usuário (UX) e negócio. E por fim, na quarta etapa foram montadas as jornadas de usuário além da conexão das funcionalidades com as jornadas e a construção do sequenciador e do Canvas MVP.</p>
+<h2 id="primeira-etapa">Primeira etapa</h2>
+<h3 id="visao-do-produto">Visão do produto</h3>
+<p><strong>Para</strong> jogar um RPG de mesa, <strong>Cujo problema majoritário é</strong> o controle do ambiente e dos jogadores do RPG, <strong>O EasyCrit é</strong> um ambiente virtual para jogar RPG em plataforma web, <strong>que oferece</strong> facilidade de acesso, maior gerenciamento e controle do jogo, <strong>Diferentemente da</strong> <em>Roll 20</em>, procura proporcionar facilidade de uso (UX). <strong>O nosso produto busca</strong> sincronizar e proporcionar melhor contole e apoio aos jogadores e mestres de RPG virtual.</p>
+<h3 id="e-nao-e-faz-nao-faz">É - Não é - Faz - Não faz</h3>
+<p>O principal obejtivo dessa etapa, além de contribuir para o entedimento do produto é identificar os aspectos positivos e negativos do produto sobre o produto ser ou fazer algo. Para essa atividade os contribuintes separaram em quatro quadrantes o que entendem que o produto é, não é, faz e não faz. Assim, por meio desses quadrantes o grupo tem maior entendimento da categoria do produto e o que de fato espera-se que ele seja capaz de fazer e o que não deve fazer.</p>
+<p>As categorias da matriz podem ser encontradas no <a href="https://slice.wbrain.me/#/board/NvGwGTDRhgbNWl6hyT">board da ferramentea slice da wBrain</a> e na imagem abaixo
+<a href="../assets/matriz_enefnf.png"><img alt="" src="../assets/matriz_enefnf.png" /></a></p>
+<h2 id="segunda-etapa">Segunda etapa</h2>
+<h3 id="personas">Personas</h3>
+<p>Nesta etapa, toda a equipe colaborou para mapear os usuários potenciais do negócio. Criamos personas detalhadas — com papéis, características e necessidades, para guiar o desenvolvimento das funcionalidades do produto.</p>
+<h4 id="mestre-de-rpg">Mestre de RPG</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>McLovin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>foto</em></td>
+<td><img alt="" src="../assets/mclovin.png" width="100px" /></td>
+</tr>
+<tr>
+<td><em>Ocupação</em></td>
+<td>Engenheiro de Software</td>
+</tr>
+<tr>
+<td><em>Dados demográficos</em></td>
+<td>34 anos, formado</td>
+</tr>
+<tr>
+<td><em>Objetivos</em></td>
+<td>organizar múltiplas campanhas mais facilmente; Testar ideias novas que não são viáveis ou práticas fisicamente; Pegar prática e experiência com RPGs; Gerenciar efeitos sonoros; Fazer livestreaming; jogar um pouco sem ter muito trabalho/ convencer amigos a jogar sem tanto trabalho; Controlar os eventos que acontecem dentro do jogo; Aprimorar a comunicação e criatividade;</td>
+</tr>
+<tr>
+<td><em>Comportamento</em></td>
+<td>Criativo, animado pra narrar, gosta de criar cenários para campanhas, leva a sério as ações dos jogadores; imersivo no jogo; criterioso com as regras; atento a detalhes; crítico a limitações da plataforma; conhecedor das regras do livro; grande ator de quinta categoria</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jogador-de-rpg">Jogador de RPG</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Jesse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>foto</em></td>
+<td><img alt="" src="../assets/jesse.png" width="100px" /></td>
+</tr>
+<tr>
+<td><em>Ocupação</em></td>
+<td>Desenvolvedor Júnior</td>
+</tr>
+<tr>
+<td><em>Dados demográficos</em></td>
+<td>29 anos, Ensino superior incompleto</td>
+</tr>
+<tr>
+<td><em>Objetivos</em></td>
+<td>Ter um RPG para jogar enquanto não chega a próxima sessão da campanha presencial; Facilidade ao entrar no jogo; Gerenciar ficha do personagem que interpreta; Passar o tempo; Ter um motivo para interagir com os amigos periodicamente; Aprender a jogar/experimentar; Interagir com o mundo criado pelo mestre</td>
+</tr>
+<tr>
+<td><em>Comportamento</em></td>
+<td>síndrome de protagonista (interrompe o mestre toda hora), demora demais nos turnos, personagem genérico, quita no meio da sessão/campanha; agressivo com os NPCs; Não sabe o que está jogando, faz suspense ao jogar um d20, nunca terminou a ficha, finaliza o passado do personagem na ultima sessão; Tenta vencer mais que se divertir</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jornadas-de-usuarios">Jornadas de usuários</h3>
+<p>Foram criadas <strong>três</strong> jornadas de usuário, uma com base na persona do Mestre de RPG e duas com base na persona do jogador de RPG. Elas podem ser encontradas nas imagens abaixo:</p>
+<p><strong>Jornada 1</strong>
+<img alt="jornada 1" src="../assets/Jornadas_de_usuario-Jornada_de_usuario_1.jpg" />
+<strong>Jornada 2</strong>
+<img alt="jornada 2" src="../assets/Jornadas_de_usuario-Jornada_de_usu%C3%A1rio_2.jpg" />
+<strong>Jornada 3</strong>
+<img alt="jornada 3" src="../assets/Jornadas_de_usuario-Jornada_de_usu%C3%A1rio_3.jpg" /></p>
+<h3 id="brainstorming-de-funcionalidades">Brainstorming de funcionalidades</h3>
+<p>Na etapa de brainstorming de funcionalidades foi utilizada a ferramente slice da wBrain, que fazer a criação, organização e manejo de boards. Essa etapa foi realizada em 2 dias, para que fossem coletadas a maior quantidade de ideias sem refino. O resultado do brainstorming pode ser encontrado na imagem abaixo e no <a href="https://slice.wbrain.me/#/board/TjoFKDzPfvTOI6TTQu">board do slice</a>
+<a href="../assets/brainstorming.png"><img alt="board do slice" src="../assets/brainstorming.png" /></a></p>
+<h3 id="revisao-tecnica">Revisão técnica</h3>
+<p>Após o brainstorming, é necessário realizar a revisão técnica das funcionalidades levantadas para levar em consideração o que é possível com base na capacidade da equipe e também o que era fora do alcance para o tempo de desenvolvimento disponível. Com isso, chegamos à seguinte lista de funcionalidades:</p>
+<p><img alt="Board de funcionalidades refinadas" src="../assets/revisao_tecnica.png" /></p>
+<p>Os cards azuis representam épicos, e o único card laranja representa um requisito não funcional do sistema, mas que também pode representar a funcionalidade "entrar em campanha"</p>
+<p><a href="../assets/revisao_tec_miro.jpg"><img alt="Oque-como-fazer" src="../assets/revisao_tec_miro.jpg" /></a></p>
+<h3 id="sequenciador">Sequenciador</h3>
+<p>Com a lista de funcionalidades refinadas após a revisão técnica, foi montado o sequenciador para definir a ordem ideal de implementação.</p>
+<p><img alt="Sequenciador" src="../assets/sequenciador.jpg" /></p>
+<h3 id="canvas-mvp">Canvas MVP</h3>
+<p>O canvas MVP do projeto EasyCrit traz uma representação visual do MVP do projeto, passando pelas funcionalidades levantadas, as personas envolvidas, as jornadas de usuário contempladas, qual o resultado esperado com a disponibilização do projeto em estado de MVP e quais métricas serão utilizadas. Além de trazer uma visão do custo para realizar o desenvolvimento e o cronograma de desenvolvimento a ser seguido. O artefato pode ser visto na imagem abaixo:
+<a href="../assets/Canvas_MVP.jpg"><img alt="canvas MVP" src="../assets/Canvas_MVP.jpg" /></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
