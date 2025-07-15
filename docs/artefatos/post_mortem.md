@@ -28,7 +28,9 @@ realizado na etapa final, é de suma importância sua leitura, pois ele contém 
 - Aprendi muita teoria sobre conceitos de software bem como as ferramentas que utilizamos, apesar de não poder aprofundar estes conceitos pelo tempo, acabei finalmente entendendo como algumas coisas cruciais funcionam (como GitHub, Docker, FastAPI, etc).
 - A equipe de EPS também foi de imensa ajuda para aprender tanto quanto para implementar recursos do projeto, e eles foram de grande inspiração para o desenvolvimento do projeto eu acredito, sem eles provavelmente estaríamos bem mais atrasados no projeto.
 - Eu gostei bastante que tudo foi muito bem documentado,e que todos estavam dispostos a ajudar.
-- 
+- Liderança ativa e bem estabelecida.
+- Boa disponibilidade dos EPS para ajudar.
+- Membros inteligentes, dedicados e dispostos a ajudar.
 
 ### Negativos
 
@@ -44,6 +46,8 @@ realizado na etapa final, é de suma importância sua leitura, pois ele contém 
 - Meu conhecimento sobre o assunto era quase 0 no inicio do projeto e isso me atrapalhou bastante para acompanhar o ritmo da equipe, devido ao tempo também não consegui aprofundar meus estudos para a matéria em especifico pois tinham outras matérias bem pesadas que também necessitavam de atenção. Além disso, muitas vezes precisava passar madrugadas virado estudando o tópico antes de implementar ele para o projeto e isso afetou um pouco meu desempenho.
 - Além do mais, pela complexidade do projeto no geral, me senti meio perdido realizando as coisas (apesar de ter tentado bastante criar e implementar minhas responsabilidades na medida do possível) e em meio a essa confusão, muitas vezes perdia horas e horas tentando entender o que eu devia/estava fazendo no projeto (apenas esclarecendo que isso foi um problema meu, a equipe de EPS sempre ajudava nessas situações mas as vezes pelo tempo ou situação eles não estavam disponíveis para a ajuda e é neste contexto que me sentia perdido).
 - No meu ponto de vista caiu muita coisa nas costas de uma pessoa só de Eps,e também achei que algumas pessoas fizeram muita coisa e outras poucas coisas.
+- Comunicação poderia ter sido um pouco mais fluida entre os MDS em algumas fases.
+- Dificuldade em manter o ritmo com todas as outras demandas externas.
 
 ## Conselhos para projetos futuros
 
@@ -111,6 +115,26 @@ receptivos, tanto do MDS quanto do EPS, foi realmente muito bom trabalhar com to
 <p align="justify">Eu gostei do projeto a ideia dele é bem interessante,mas, acho que poderia ter sido bem melhor.</p>
 <p align="center">
   <img src="https://c.tenor.com/bDpY8fAIzBMAAAAd/tenor.gif" width="350" />
+</p>
+
+#### Caio Cordeiro de Sousa
+<p align="justify">O projeto foi uma grande oportunidade de aprendizado. Deu pra entender muito melhor não só a parte técnica do desenvolvimento, tecnologias e arquiteturas, mas também a parte de gestão de time, pessoas e tempo. Claro que também se aprende como essas coisas são difíceis, os desafios, as dificuldades de lidar com tudo e ainda assim continuar produtivo e motivado, principalmente com tantas outras coisas acontecendo, dentro e fora da faculdade.</p>
+
+<p align="justify">No geral, foi uma experiência muito válida e uma grande oportunidade de crescimento.</p>
+<p align="center">
+  <img src="https://i.giphy.com/3oriO7A7bt1wsEP4cw.webp" width="350" />
+</p>
+
+#### Pedro Henrique Pereira Santos
+<p align="justify"></p>
+<p align="center">
+  <img src="https://c.tenor.com/ZMzKkrUnAn4AAAAC/tenor.gif" width="350" />
+</p>
+
+#### Dante Fernandes Scarpati
+<p align="justify"></p>
+<p align="center">
+  <img src="https://c.tenor.com/ZMzKkrUnAn4AAAAC/tenor.gif" width="350" />
 </p>
 
 ### EPS
