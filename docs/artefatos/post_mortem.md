@@ -70,19 +70,19 @@ realizado na etapa final, é de suma importância sua leitura, pois ele contém 
 #### Luara Cristiana da Costa
 <p align="justify">O projeto como um todo foi uma experiência enriquecedora. Aprendi muito sobre trabalho em equipe, integração de sistemas e a importância de um ciclo de desenvolvimento bem estruturado. As dificuldades encontradas serviram como base para crescimento técnico e pessoal, e foi gratificante ver as funcionalidades ganhando forma ao longo do semestre. Trabalhar no EasyCrit me ajudou a consolidar conhecimentos em backend, organização de código e colaboração em um ambiente real de desenvolvimento.</p>
 <p align="center">
-  <img src="https://tenor.com/pt-BR/view/the-office-the-gif-26388443" width="350" />
+  <img src="https://c.tenor.com/DCI2uoqFUvEAAAAd/tenor.gif" width="350" />
 </p>
 
 #### Thales Duarte Alcântara de Oliveira
 <p align="justify">Gostei muito de participar do projeto. Embora tenha ficado com vontade de entregar o MVP, compreendo as dificuldades que todos enfrentamos no processo. Foi uma experiência valiosa de aprendizado e crescimento. Aprendi muito também sobre o papel de um bom líder com o Matheus, ele foi a representação do esforço, e acredito que grande parte dos nossos acertos se deve às orientações e ao comprometimento dele</p>
 <p align="center">
-  <img src="https://tenor.com/view/dark-souls-gif-24580984" width="350" />
+  <img src="https://c.tenor.com/jWhi_6_kVEYAAAAd/tenor.gif" width="350" />
 </p>
 
 #### Lucas De Paula Leal
 <p align="justify">Foi muito produtivo ter participado, mesmo que pouco, foi de muito aprendizado e principalmente amadurecimento, o semestre foi bem complicado para muitos, e isso afetou bastante o projeto, mas virou aprendizado.</p>
 <p align="center">
-  <img src="https://tenor.com/pt-BR/view/teagif-cute-cartoon-uwu-simple-gif-15744208" width="350" />
+  <img src="https://media.tenor.com/gJCc44CtLg0AAAAj/teagif-cute.gif" width="350" />
 </p>
 
 #### Miquéias Ezequiel Gonçalves Carvalho
@@ -92,25 +92,25 @@ novas. Foi um processo importante para o meu amadurecimento, não apenas pessoal
 também em termos de conhecimento técnico. Todos os membros do grupo foram bastante
 receptivos, tanto do MDS quanto do EPS, foi realmente muito bom trabalhar com todos.</p>
 <p align="center">
-  <img src="https://tenor.com/pt-BR/view/evangelion-gif-22753555" width="350" />
+  <img src="https://c.tenor.com/YfkLDtl2HPAAAAAd/tenor.gif" width="350" />
 </p>
 
 #### Samuel Felipe Lira de Souza
 <p align="justify">O projeto foi muito gratificante para mim tanto no educacional e aprendizado como no pessoal, o pessoal de EPS e meus colegas de MDS mostraram grande união para o desenvolvimento desde de o início até o final, sendo bem comunicativos e diretos sobre problemas, justificativas e em orientar por onde começar a aprender algo. Todos deram o máximo de empenho possível mesmo com dificuldades e infortúnios sobre horário, vida pessoal e faculdade. Eu, pessoalmente, pude entender melhor como é ter uma experiência de trabalho nessa área e gostei muito do que eu vi, gostaria de ter dado um pouco mais de mim além do que eu pude fazer, e acredito que sem os problemas de vida pessoal que estava tendo eu poderia ter feito isso, melhorei minha comunicação para ser um participante mais ativos em futuros projetos, tanto dentro como fora da faculdade, e aprendi a sair da minha zona de conforto, tendo mais certeza do que fazer e como fazer. Por fim, foi um projeto que gostei muito de participar e gostaria de trabalhar em algo assim futuramente, agradeço aos líderes do projeto e membros do grupo por terem feito disso uma experiência maravilhosa e espero trabalhar com eles em um futuro próximo.</p>
 <p align="center">
-  <img src="https://tenor.com/kqgGEcKykBS.gif" width="350" />
+  <img src="https://c.tenor.com/d4B1UeN5U54AAAAd/tenor.gif" width="350" />
 </p>
 
 #### Bernardo Watanabe Venzi
 <p align="justify">No geral estou satisfeito com o resultado, e acho que aprendi bastante. Apesar da correria que foi, consegui entender coisas que nunca tinha entendido antes e estudar coisas que alguns meses atras eram impossíveis de se entender naquele nível. Mas com o apoio da equipe, suporte dos EPS e aulas do professor, consegui implementar e entender coisas que bem no inicio não faziam sentido, e enquanto aplicava essas coisas, acabei me divertindo no processo. Logo sou grato a equipe e ao professor por essa oportunidade de aprendizado, apesar das dificuldades, porque fiz coisas que nem imaginava estar fazendo nesta etapa do curso. </p>
 <p align="center">
-  <img src="https://tenor.com/pt-BR/view/sekiro-shadows-die-twice-genichiro-ashina-two-hours-of-sleep-gif-8236620067588523939" width="350" />
+  <img src="https://c.tenor.com/ck5aT953x6MAAAAd/tenor.gif" width="350" />
 </p>
 
 #### Lara Souza Mota
 <p align="justify">Eu gostei do projeto a ideia dele é bem interessante,mas, acho que poderia ter sido bem melhor.</p>
 <p align="center">
-  <img src="https://tenor.com/pt-BR/view/shrek-shrek-mad-mad-mad-shrek-shrek-frustrated-gif-26568639" width="350" />
+  <img src="https://c.tenor.com/bDpY8fAIzBMAAAAd/tenor.gif" width="350" />
 </p>
 
 ### EPS
@@ -122,13 +122,13 @@ receptivos, tanto do MDS quanto do EPS, foi realmente muito bom trabalhar com to
 <p align="left">Obrigado por tudo, Universidade de Brasília.<br/>Obrigado, Engenharia de Software</p>
 <p align="left">Matheus Pimentel Leal</p>
 <p align="center">
-  <img src="https://tenor.com/view/gandalf-lord-of-the-rings-fly-you-fools-idiots-gif-22861858" width="350" />
+  <img src="https://c.tenor.com/9W_kK331mioAAAAd/tenor.gif" width="350" />
 </p>
 
 #### Philipe
 <p align="justify"></p>
 <p align="center">
-  <img src="https://tenor.com/view/discord-who-asked-me-looking-for-who-asked-travolta-meme-travolta-confused-gif-27133622" width="350" />
+  <img src="https://c.tenor.com/ZMzKkrUnAn4AAAAC/tenor.gif" width="350" />
 </p>
 
 
@@ -136,7 +136,5 @@ receptivos, tanto do MDS quanto do EPS, foi realmente muito bom trabalhar com to
 
 <p align="justify"></p>
 <p align="center">
-  <img src="https://tenor.com/view/discord-who-asked-me-looking-for-who-asked-travolta-meme-travolta-confused-gif-27133622" width="350" />
+  <img src="https://c.tenor.com/ZMzKkrUnAn4AAAAC/tenor.gif" width="350" />
 </p>
-
-
