@@ -1,14 +1,24 @@
 # Post Mortem
 
 ## Introdução
-
 Este documento tem por finalidade fornecer uma avaliação crítica quanto ao projeto,
 realizado na etapa final, é de suma importância sua leitura, pois ele contém informações cruciais para auxiliar no desenvolvimento de projetos futuros.
 
+## Planejado x Entregue
+
+| Épico | Objetivo Geral | Status |
+|-------|----------------|--------|
+| Login e autenticação | Realizar o CRUD de usuários e a autenticação por meio de auth tokens, seguindo padrões seguros de mercado | 🍻 |
+| Controle e manipulação de arquivos | Salvar os arquivos referentes às campanhas e aos personagens dos usuários do produto | 🧊 |
+| Controle de sessões | Realizar o controle da todas as questões relacionadas à sessões de jogo dos usuários, bem como cadastro de sessões, conexão com a sessão, geração de convites e criação de personagens | 🏗️ |
+
+!!! note "Legenda"
+    - 🍻 Finalizado
+    - 🏗️ Em andamento / Parcialmente finalizado
+    - 🧊 Não finalizado  
+
 ## Pontos do projeto
-
 ### Positivos
-
 - Comunicação clara e respeitosa, promovendo um ambiente de trabalho colaborativo e saudável.
 - Escuta ativa e empatia com os colegas, contribuindo para a resolução de conflitos e melhoria do clima da equipe.
 - Disposição para apoiar outros membros, mesmo fora de suas responsabilidades diretas, fortalecendo o espírito de equipe.
@@ -31,9 +41,10 @@ realizado na etapa final, é de suma importância sua leitura, pois ele contém 
 - Liderança ativa e bem estabelecida.
 - Boa disponibilidade dos EPS para ajudar.
 - Membros inteligentes, dedicados e dispostos a ajudar.
+- MDS foi, até agora, a matéria na qual tive maior aprendizado. Pude ter uma verdadeira dimensão do que é o processo completo de desenvolvimento de software, e aprendi tecnologias e conceitos novos.
+- A disponibilidade dos membros de EPS, em especial o Matheus, ajudou nos gargalos e na continuidade da produtividade.
 
 ### Negativos
-
 - Dificuldade inicial em delegar tarefas ou pedir ajuda.
 - Tendência a querer resolver tudo sozinha, o que pode comprometer a colaboração em atividades que exigem mais divisão de responsabilidades.
 - Participação menos ativa nas dinâmicas de integração da equipe, o que poderia ter fortalecido ainda mais os laços interpessoais.
@@ -48,9 +59,9 @@ realizado na etapa final, é de suma importância sua leitura, pois ele contém 
 - No meu ponto de vista caiu muita coisa nas costas de uma pessoa só de Eps,e também achei que algumas pessoas fizeram muita coisa e outras poucas coisas.
 - Comunicação poderia ter sido um pouco mais fluida entre os MDS em algumas fases.
 - Dificuldade em manter o ritmo com todas as outras demandas externas.
+- Alguns colegas de MDS foram ausentes/negligentes com o projeto em determinados momentos, então tive que fazer algumas tasks sozinho.
 
 ## Conselhos para projetos futuros
-
 - Continuar mantendo a clareza nas comunicações técnicas e priorizar o balanceamento entre qualidade e entrega.
 - Confiar mais em suas decisões técnicas — a experiência acumulada já é suficiente para assumir papéis mais estratégicos em projetos futuros.
 - Participar mais ativamente das discussões de arquitetura e decisões iniciais do projeto, pois suas ideias agregam bastante.
@@ -66,10 +77,11 @@ realizado na etapa final, é de suma importância sua leitura, pois ele contém 
 - Mantenham anotado a disposição do seu tempo para o projeto para agendar/reservar um horário para a produção do mesmo.
 - Pesquise, procure e veja coisas com relação ao seu projeto para procurar inspiração para ele, isso ajuda e motiva a produção e desenvolvimento dele.
 - É bom ter uma boa divisão de trabalho pra não existe sobrecarga ,organização é muito importante também.
+- Se familiarizar com o Git e preparar o ambiente de desenvolvimento corretamente são essenciais para evitar erros.
+- É preciso entender bem para que serve cada ferramenta do ambiente, pois se erros surgirem a partir disso, já será nítida a causa deles.
 
 <!-- Nesta seção, seguir a ordem de cargos que desejar -->
 ## Feeling Individual
-
 ### Equipe MDS
 #### Luara Cristiana da Costa
 <p align="justify">O projeto como um todo foi uma experiência enriquecedora. Aprendi muito sobre trabalho em equipe, integração de sistemas e a importância de um ciclo de desenvolvimento bem estruturado. As dificuldades encontradas serviram como base para crescimento técnico e pessoal, e foi gratificante ver as funcionalidades ganhando forma ao longo do semestre. Trabalhar no EasyCrit me ajudou a consolidar conhecimentos em backend, organização de código e colaboração em um ambiente real de desenvolvimento.</p>
@@ -132,9 +144,9 @@ receptivos, tanto do MDS quanto do EPS, foi realmente muito bom trabalhar com to
 </p>
 
 #### Dante Fernandes Scarpati
-<p align="justify"></p>
+<p align="justify">Tive falta de tempo e sobrecarga este semestre, então acho que eu poderia ter produzido mais se eu tivesse uma matéria a menos ou algo do tipo. Porém, dentro do que a matéria me requisitou, creio ter atendido às demandas e aprendido os conteúdos satisfatoriamente.</p>
 <p align="center">
-  <img src="https://c.tenor.com/ZMzKkrUnAn4AAAAC/tenor.gif" width="350" />
+  <img src="https://c.tenor.com/sqxKQ3lUS_wAAAAd/tenor.gif" width="350" />
 </p>
 
 ### EPS
@@ -157,7 +169,6 @@ receptivos, tanto do MDS quanto do EPS, foi realmente muito bom trabalhar com to
 
 
 #### Kess
-
 <p align="justify"></p>
 <p align="center">
   <img src="https://c.tenor.com/ZMzKkrUnAn4AAAAC/tenor.gif" width="350" />
