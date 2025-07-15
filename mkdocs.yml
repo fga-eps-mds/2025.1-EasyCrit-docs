@@ -12,6 +12,10 @@ extra_css:
   - stylesheets/extra.css
 markdown_extensions:
   - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 nav:
     - Home: index.md
     - Guias:
@@ -30,12 +34,17 @@ nav:
       - Protótipo de Alta Fidelidade: artefatos/pre_sprints/prototipo-documentacao.md
       - Product Backlog: artefatos/product_backlog.md
     - Sprints:
-      - Sprint 1: artefatos/sprints/sprint1.md
-      - Sprint 2: artefatos/sprints/sprint2.md
-      - Sprint 3: artefatos/sprints/sprint3.md
-      - Sprint 4: artefatos/sprints/sprint4.md
-      - Sprint 5: artefatos/sprints/sprint5.md
-      - Sprint 6: artefatos/sprints/sprint6.md
+      - Sprint 1: artefatos/sprints/sprint01.md
+      - Sprint 2: artefatos/sprints/sprint02.md
+      - Sprint 3: artefatos/sprints/sprint03.md
+      - Sprint 4: artefatos/sprints/sprint04.md
+      - Sprint 5: artefatos/sprints/sprint05.md
+      - Sprint 6: artefatos/sprints/sprint06.md
+      - Sprint 7: artefatos/sprints/sprint07.md
+      - Sprint 8: artefatos/sprints/sprint08.md
+      - Sprint 9: artefatos/sprints/sprint09.md
+      - Sprint 10: artefatos/sprints/sprint10.md
+      - Sprint 11: artefatos/sprints/sprint11.md
     - Releases:
       - Release R1: artefatos/releases/release1.md
       - Release RN: artefatos/releases/release2.md
