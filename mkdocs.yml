@@ -38,3 +38,5 @@ nav:
       - Sprint 6: artefatos/sprints/sprint6.md
     - Releases:
       - Release R1: artefatos/releases/release1.md
+      - Release RN: artefatos/releases/release2.md
+    - Post Mortem: artefatos/post_mortem.md
