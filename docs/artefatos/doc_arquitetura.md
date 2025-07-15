@@ -124,4 +124,36 @@ O diagrama de sequência a seguir demonstra a interação entre os principais co
 
 ### 4. Diagrama Lógico do Banco de Dados
 
-[![Diagrama ER](../assets/diagrama_bancos.png)](../assets/diagrama_bancos.png)
+[![Diagrama map ](../assets/dldmap.png)](../assets/dldmap.png)
+
+[![Diagrama dld main](../assets/dld-main.png)](../assets/dld-main.png)
+
+
+## 5 - Tamanho, Desempenho e Qualidade
+
+### 5.1 Tamanho do Sistema
+
+O sistema **EasyCrit** foi desenvolvido com uma arquitetura modular baseada em microsserviços, o que possibilita a distribuição do código em domínios específicos. Isso reduz a complexidade individual de cada serviço, mesmo que o sistema como um todo cresça em funcionalidades.
+
+O banco de dados também segue esse princípio de modularidade. Cada microsserviço possui seu próprio banco, com tabelas focadas apenas no seu domínio de responsabilidade. Isso facilita a escalabilidade horizontal e a manutenção do projeto.
+
+
+### 5.2 Desempenho
+
+O sistema foi projetado para manter um bom desempenho mesmo com múltiplos usuários simultâneos. Algumas decisões que favorecem isso incluem:
+
+- Microsserviços desacoplados, cada um com responsabilidade única, reduzindo gargalos em pontos críticos.
+- Persistência distribuída, com bancos PostgreSQL separados por serviço, evitando competição por recursos entre domínios.
+- Uso do **FastAPI**, que oferece suporte a operações assíncronas nativas e alta performance no tempo de resposta das rotas HTTP.
+
+---
+
+### 5.3 Qualidade
+
+A qualidade da aplicação é mantida através das seguintes práticas:
+
+- Padronização de estrutura de código entre microsserviços.
+- Separação de responsabilidades entre camadas (rotas, schemas, modelos, testes).
+- Utilização de testes automatizados para rotas e funcionalidades críticas.
+- Adoção de ferramentas de qualidade estática, como `ruff`, para garantir boas práticas de linting e formatação.
+- Uso de **Docker** e `docker-compose` para facilitar a replicação do ambiente de desenvolvimento e produção.
